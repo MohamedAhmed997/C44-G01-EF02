@@ -17,5 +17,10 @@ namespace C44_G01_EF02.Models
         [MaxLength(255)]
         public int Description { get; set; }
         public int? Topic_Id { get; set; }
+
+        public int Top_Id { get; set; }
+
+        public ICollection<Stud_Course> Stud_Course { get; set; } = new HashSet<Stud_Course>();
+        public ICollection<Course_Inst> course_Insts { get; set; } = new HashSet<Course_Inst>();
     }
 }

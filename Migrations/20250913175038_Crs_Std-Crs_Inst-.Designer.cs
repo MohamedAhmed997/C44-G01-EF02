@@ -4,6 +4,7 @@ using C44_G01_EF02.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace C44_G01_EF02.Migrations
 {
     [DbContext(typeof(TaskCompanyDbContext))]
-    partial class TaskCompanyDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250913175038_Crs_Std-Crs_Inst-")]
+    partial class Crs_StdCrs_Inst
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
